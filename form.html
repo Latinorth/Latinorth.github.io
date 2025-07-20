@@ -10,12 +10,41 @@
     <h1>congrats, you made it to the form page</h1>
     <hr>
     <br>
-    <form action="index.php" method="POST">
-        <label for="username">username: </label>
-        <input type="text" id="username" required>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="favorite">favorite: </label>
+        <input type="text" id="favorite" placeholder="your favorite">
         <br>
+        <label for="type">what type are you? </label>
+        <label for="top">Top?</label>
+        <input type="radio" id="top" value="top" name="type">
+        <label for="middle">Middle?</label>
+        <input type="radio" id="middle" value="middle" name="type">
+        <label for="bottom">Bottom?</label>
+        <input type="radio" id="bottom" value="bottom" name="type">
+        <br>
+        <label for="likes">What do you like?</label>
+        <select id="likes">
+            <option value="boys">Boys</option>
+            <option value="girls">Girls</option>
+            <option value="femboys">Femboys</option>
+            <option value="femgirls">Femgirls</option>
+            <option value="tomboys">Tomboys</option>
+            <option value="tomgirls">Tomgirls</option>
+        </select>
+        <br>
+        <label for="online">Cronically Online</label>
+        <input type="checkbox" id="online">
+        <br>
+        <label for="specfics">Be Specfic</label>
+        <textarea id="specfics"></textarea>
+        <br>
+        <label for="file">Pics: </label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+        <br>
+        <input type="reset">
         <br>
         <input type="submit">
+        
         
     </form>
     <br>
