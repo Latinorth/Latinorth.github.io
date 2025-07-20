@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Page</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-</head>
-<body>
-    <h1>congrats, you made it to the form page</h1>
-    <hr>
-    <br>
-    <form action="index.php" method="POST" enctype="multipart/form-data">
-        <label for="favorite">favorite: </label>
-        <input type="text" id="favorite" placeholder="your favorite">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Page</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <h1>congrats, you made it to the form page</h1>
+        <hr>
         <br>
-        <label for="type">what type are you? </label>
-        <label for="top">Top?</label>
-        <input type="radio" id="top" value="top" name="type">
-        <label for="middle">Middle?</label>
-        <input type="radio" id="middle" value="middle" name="type">
-        <label for="bottom">Bottom?</label>
-        <input type="radio" id="bottom" value="bottom" name="type">
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <label for="favorite">favorite: </label>
+            <input type="text" id="favorite" placeholder="your favorite">
+            <br>
+            <label for="type">what type are you? </label>
+            <label for="top">Top?</label>
+            <input type="radio" id="top" value="top" name="type">
+            <label for="middle">Middle?</label>
+            <input type="radio" id="middle" value="middle" name="type">
+            <label for="bottom">Bottom?</label>
+            <input type="radio" id="bottom" value="bottom" name="type">
+            <br>
+            <label for="likes">What do you like?</label>
+            <select id="likes">
+                <option value="boys">Boys</option>
+                <option value="girls">Girls</option>
+                <option value="femboys">Femboys</option>
+                <option value="femgirls">Femgirls</option>
+                <option value="tomboys">Tomboys</option>
+                <option value="tomgirls">Tomgirls</option>
+            </select>
+            <br>
+            <label for="online">Cronically Online</label>
+            <input type="checkbox" id="online">
+            <br>
+            <label for="specfics">Be Specfic</label>
+            <textarea id="specfics"></textarea>
+            <br>
+            <label for="file">Pics: </label>
+            <input type="file" id="file" accept="image/png, image/jpeg">
+            <br>
+            <label for="mySlider">Choose a value:</label>
+            <input type="range" id="mySlider" name="mySlider" min="0" max="100" value="50">
+            <span id="sliderValue">50</span>
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
+        </form>
         <br>
-        <label for="likes">What do you like?</label>
-        <select id="likes">
-            <option value="boys">Boys</option>
-            <option value="girls">Girls</option>
-            <option value="femboys">Femboys</option>
-            <option value="femgirls">Femgirls</option>
-            <option value="tomboys">Tomboys</option>
-            <option value="tomgirls">Tomgirls</option>
-        </select>
         <br>
-        <label for="online">Cronically Online</label>
-        <input type="checkbox" id="online">
-        <br>
-        <label for="specfics">Be Specfic</label>
-        <textarea id="specfics"></textarea>
-        <br>
-        <label for="file">Pics: </label>
-        <input type="file" id="file" accept="image/png, image/jpeg">
-        <br>
-        <input type="reset">
-        <br>
-        <input type="submit">
-        
-        
-    </form>
-    <br>
-    <br>
-    click <a href="index.html" target=_self>here</a> to go back to the main page
-</body>
+        click <a href="index.html" target=_self>here</a> to go back to the main page
+        <script>
+          const slider = document.getElementById('mySlider');
+          const output = document.getElementById('sliderValue');
+          slider.oninput = function() {
+            output.textContent = this.value;
+          }
+        </script>
+    </body>
 </html>
