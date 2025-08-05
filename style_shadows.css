@@ -1,0 +1,9 @@
+h1{
+    text-shadow: 3px 5px 5px green, 5px 7px 5px yellow;
+}
+#box1{
+    width: device-width;
+    height: 50px;
+    background-color: rgb(199, 255, 255);
+    box-shadow: 0px 0px 100px;
+}

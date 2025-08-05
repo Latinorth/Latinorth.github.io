@@ -1,0 +1,27 @@
+body{
+    background-color: chocolate;
+}
+h1{
+    color: brown;
+}
+p{
+    color: beige;
+}
+#p1{
+    color: aqua;
+}
+#p2{
+    color: green;
+}
+#p3{
+    color: blueviolet;
+}
+#p4{
+    color: crimson;
+}
+.odd{
+    color: blue;
+}
+.even{
+    color: darkcyan;
+}
