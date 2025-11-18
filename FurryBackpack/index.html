@@ -9,13 +9,14 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  /* REMOVE overflow: hidden; */
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* Use dynamic viewport height to respect mobile browser UI */
+  min-height: 100dvh;   /* modern browsers */
   background: #222;
   color: #eee;
   font-family: sans-serif;
@@ -155,7 +156,7 @@ body {
 }
 
 </style>
-<title>Local Backpack</title>
+<title>Furry Backpack</title>
 </head>
 <body>
 
@@ -253,4 +254,5 @@ uploadToServerButton.addEventListener('click', async () => {
 
 </body>
 </html>
+
 
